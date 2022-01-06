@@ -1,0 +1,43 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700);
+
+.top-button {
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+  color: white;
+  padding: 18px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.top-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.nav-text {
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.nav-text li {
+  margin-right: 20px;
+}
+
+.register-button {
+  background-color: transparent;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  border-style: solid;
+  border-radius: 30px;
+  border-width: 1px;
+  border-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
