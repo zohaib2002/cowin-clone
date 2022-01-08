@@ -1,0 +1,37 @@
+.callbar {
+  background-color: #2a2f47;
+  color: white;
+  padding: 20px;
+}
+
+.support-col {
+  font-weight: 700;
+  font-family: "Roboto";
+  margin-top: auto;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  border-left: transparent;
+  border-top: transparent;
+  border-bottom: transparent;
+}
+
+.title-row {
+  font-weight: 100;
+  font-family: "Roboto";
+}
+
+.row a {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.row a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.row .col {
+  padding-left: 20px;
+}

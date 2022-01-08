@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/navbar";
 import Home from "./pages/home";
 
@@ -7,7 +7,7 @@ function App() {
     <Router>
       <div className="App">
         <Navbar />
-        <main className="container">
+        <main>
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>
