@@ -17,3 +17,9 @@
   transition: opacity 0.6s ease;
   border-radius: 50%;
 } */
+
+.carousel-item img {
+  height: 90vh;
+  object-position: 0px;
+  object-fit: cover;
+}

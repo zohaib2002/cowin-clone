@@ -29,3 +29,29 @@ code {
 ::-webkit-scrollbar-thumb {
   background: gray;
 }
+
+h2 {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  font-family: "Roboto";
+}
+
+h1 {
+  font-size: 36px !important;
+  font-family: "Roboto";
+  font-weight: 700 !important;
+}
+
+.r-btn {
+  border: 2px solid #4e67eb;
+  border-radius: 50px;
+  padding: 12px 30px;
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  background: #4e67eb;
+  color: #fff;
+  box-shadow: 0 5px 9px rgb(0 0 0 / 16%);
+}

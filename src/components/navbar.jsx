@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <div className="sticky-top">
       <nav
-        className="navbar"
+        className="navbar d-none d-sm-block"
         style={{ backgroundColor: "#262626", padding: 0 }}
       >
         <div className="container-fluid" style={{ padding: 0 }}>

@@ -1,4 +1,39 @@
 .counter {
   background-color: #f4e7e0;
-  height: 100px;
+}
+
+/* .first-col {
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+  border-left: transparent;
+  border-top: transparent;
+  border-bottom: transparent;
+} */
+
+.tiny-img {
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  height: 60px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Roboto";
+}
+
+.number {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.vl {
+  border-left: 1px solid gray;
+  /* padding-bottom: 20px; */
+}
+
+.counter-col {
+  padding-bottom: 30px;
 }

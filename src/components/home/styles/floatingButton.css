@@ -1,0 +1,9 @@
+.floating-button {
+  width: 100vw;
+  height: 50px;
+  background-color: #fcbf02;
+  border: none;
+  font-weight: 700;
+  font-family: "Roboto";
+  font-size: 18px;
+}

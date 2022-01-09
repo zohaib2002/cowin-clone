@@ -1,0 +1,33 @@
+/* .fab {
+  position: fixed;
+  bottom: 0px;
+} */
+.big-img {
+  max-width: 70%;
+}
+
+.para {
+  font-size: 20px;
+  opacity: 0.7;
+  font-family: "Roboto";
+}
+
+.btn-md {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .btn-md {
+    width: fit-content;
+  }
+}
+@media (min-width: 992px) {
+  .btn-md {
+    width: fit-content;
+  }
+}
+@media (min-width: 1200px) {
+  .btn-md {
+    width: fit-content;
+  }
+}
