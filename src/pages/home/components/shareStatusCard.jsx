@@ -1,5 +1,5 @@
 import "./styles/shareStatusCard.css";
-import shareStatus from "../../images/share-status-new.svg";
+import shareStatus from "../../../images/share-status-new.svg";
 
 function ShareStatusCard() {
   return (

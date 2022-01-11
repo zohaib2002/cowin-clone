@@ -1,5 +1,5 @@
 import "./styles/childrenCard.css";
-import children from "../../images/vaccin-childrens-img.svg";
+import children from "../../../images/vaccin-childrens-img.svg";
 
 function ChildrenCard() {
   return (

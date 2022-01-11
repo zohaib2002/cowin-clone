@@ -2,9 +2,6 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden; /* Hide horizontal scrollbar */
@@ -18,6 +15,7 @@ code {
 /* Works on Firefox */
 * {
   scrollbar-width: thin;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 /* Works on Chrome, Edge, and Safari */
@@ -33,12 +31,10 @@ code {
 h2 {
   font-size: 20px !important;
   font-weight: 700 !important;
-  font-family: "Roboto";
 }
 
 h1 {
   font-size: 36px !important;
-  font-family: "Roboto";
   font-weight: 700 !important;
 }
 

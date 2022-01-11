@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./styles/counter.css";
-import vaccine from "../../images/vaccine.svg";
-import syringe from "../../images/syringe.png";
+import vaccine from "../../../images/vaccine.svg";
+import syringe from "../../../images/syringe.png";
 // import './scripts/counter.js';
 // Scripts are executed before DOM is loaded
 

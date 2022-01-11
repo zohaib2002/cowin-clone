@@ -1,5 +1,5 @@
 import "./styles/precautionCard.css";
-import precaution from "../../images/Precaution Dose.svg";
+import precaution from "../../../images/Precaution Dose.svg";
 
 function PrecautionCard() {
   return (

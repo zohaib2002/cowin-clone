@@ -1,0 +1,45 @@
+.footer {
+  padding-top: 30px;
+  padding-bottom: 55px;
+  color: white;
+  background-color: #0e1229;
+}
+
+.list-title {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2.4;
+}
+
+.list-title a {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.cw {
+  font-size: 12px;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .cw {
+    text-align: left;
+  }
+}
+@media (min-width: 992px) {
+  .cw {
+    text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+  .cw {
+    text-align: left;
+  }
+}
+
+.ftr-vl {
+  border-right: 1px solid white;
+  height: fit-content;
+  /* padding-bottom: 20px; */
+}

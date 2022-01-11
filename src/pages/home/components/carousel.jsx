@@ -1,8 +1,8 @@
 import "./styles/carousel.css";
-import carousel1 from "../../images/carousel1.png";
-import carousel2 from "../../images/carousel2.png";
-import carousel3 from "../../images/carousel3.png";
-import carousel4 from "../../images/carousel4.png";
+import carousel1 from "../../../images/carousel1.png";
+import carousel2 from "../../../images/carousel2.png";
+import carousel3 from "../../../images/carousel3.png";
+import carousel4 from "../../../images/carousel4.png";
 
 function Carousel() {
   return (

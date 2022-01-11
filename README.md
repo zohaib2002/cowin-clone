@@ -1,4 +1,4 @@
 # CoWin India clone
 
-This project is deployed on GitHub Pages.  
-See it in action: https://zohaib2002.github.io/cowin-clone
+This project is deployed on Netlify.  
+See it in action: https://pedantic-jackson-3ea425.netlify.app/
