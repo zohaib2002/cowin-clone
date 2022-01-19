@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./styles/precautionCard.css";
 import precaution from "../../../images/Precaution Dose.svg";
 
@@ -15,7 +16,9 @@ function PrecautionCard() {
               and having co-morbidities, should take precaution dose, only after
               medical advice. Both online and walk-in available.
             </div>
-            <button className="r-btn btn-md">Book Your Slot</button>
+            <Link to="scheduleAppointment">
+              <button className="r-btn btn-md">Book Your Slot</button>
+            </Link>
           </div>
           <div
             className="order-2 d-none d-md-block"

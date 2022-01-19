@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./styles/childrenCard.css";
 import children from "../../../images/vaccin-childrens-img.svg";
 
@@ -20,7 +21,9 @@ function ChildrenCard() {
               Vaccination slots can now be booked for children aged 15-18 yrs.
               Both online and walk-in available.
             </div>
-            <button className="r-btn btn-md">Book Your Slot</button>
+            <Link to="scheduleAppointment">
+              <button className="r-btn btn-md">Book Your Slot</button>
+            </Link>
           </div>
         </div>
       </div>

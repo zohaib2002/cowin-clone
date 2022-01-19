@@ -1,0 +1,35 @@
+.heart-wrapper {
+  padding: 30px;
+  box-shadow: 0px 0px 3px 3px #f0f0f0;
+  border-radius: 50%;
+}
+
+.heart-img {
+  max-width: 25vw;
+}
+
+.mobile-input {
+  width: 100%;
+  border: none;
+  border-bottom: solid 1px #0d153f;
+}
+
+.mobile-input:focus {
+  outline: none;
+  border-bottom: solid 2px #0d153f;
+}
+
+.otp-input {
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 10px;
+  caret-color: transparent;
+  width: 100%;
+  border: none;
+  border-bottom: solid 1px #0d153f;
+}
+
+.otp-input:focus {
+  outline: none;
+  border-bottom: solid 2px #0d153f;
+}

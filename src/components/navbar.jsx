@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../images/new-logo.svg";
 import "./styles/navbar.css";
 
@@ -103,7 +104,11 @@ function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <button className="register-button">Register / Sign In</button>
+                <Link to="login">
+                  <button className="register-button">
+                    Register / Sign In
+                  </button>
+                </Link>
               </li>
             </ul>
           </div>
