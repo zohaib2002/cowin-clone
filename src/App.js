@@ -5,7 +5,7 @@ import ScrollToTop from "./scrollToTop";
 
 import Navbar from "./components/navbar";
 import Home from "./pages/home/home";
-import ScheduleAppointment from "./pages/scheduleAppointment/scheduleAppointment";
+import AppointmentDetails from "./pages/appointmentDetails/appointmentDetails";
 import Footer from "./components/footer";
 
 class App extends Component {
@@ -24,11 +24,13 @@ class App extends Component {
 
   componentDidMount() {
     const userString = sessionStorage.getItem("user");
-    const user = JSON.parse(userString);
-    this.setState({
-      isLoggedIn: true,
-      user: user,
-    });
+    if (userString) {
+      const user = JSON.parse(userString);
+      this.setState({
+        isLoggedIn: true,
+        user: user,
+      });
+    }
   }
 
   // <Route path="/login" element={<Login handleLogIn={this.handleLogIn} />} />
@@ -44,8 +46,8 @@ class App extends Component {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route
-                path="/scheduleAppointment"
-                element={<ScheduleAppointment user={this.state.user} handleLogIn={this.handleLogIn} />}
+                path="/appointmentDetails"
+                element={<AppointmentDetails user={this.state.user} handleLogIn={this.handleLogIn} />}
               />
             </Routes>
           </main>
