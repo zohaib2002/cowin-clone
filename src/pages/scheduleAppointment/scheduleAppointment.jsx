@@ -40,7 +40,7 @@ class ScheduleAppointment extends Component {
 
   getStates = () => {
     const options = {
-      url: process.env.API_URL + "/states",
+      url: process.env.REACT_APP_API_URL + "/states",
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -59,7 +59,7 @@ class ScheduleAppointment extends Component {
 
   getCities = (state) => {
     const options = {
-      url: process.env.API_URL + "/states/" + state.replace(/ /g, "+"),
+      url: process.env.REACT_APP_API_URL + "/states/" + state.replace(/ /g, "+"),
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -78,7 +78,7 @@ class ScheduleAppointment extends Component {
 
   getCenters = (city) => {
     const options = {
-      url: process.env.API_URL + "/center?city=" + city.replace(/ /g, "+"),
+      url: process.env.REACT_APP_API_URL + "/center?city=" + city.replace(/ /g, "+"),
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -117,7 +117,7 @@ class ScheduleAppointment extends Component {
     var dateRequestString = bookDate.getMonth() + 1 + "/" + bookDate.getDate() + "/" + bookDate.getFullYear();
 
     const options = {
-      url: process.env.API_URL + "/appointment",
+      url: process.env.REACT_APP_API_URL + "/appointment",
       method: "POST",
       headers: {
         "Content-Type": "application/json",

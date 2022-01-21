@@ -15,7 +15,7 @@ class AppointmentDetails extends Component {
 
   getCenter = (appointment) => {
     const options = {
-      url: process.env.API_URL + "/center/" + appointment.centerId,
+      url: process.env.REACT_APP_API_URL + "/center/" + appointment.centerId,
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -33,7 +33,7 @@ class AppointmentDetails extends Component {
 
   getAppointment = () => {
     const options = {
-      url: process.env.API_URL + "/appointment/" + this.props.user.appointmentId,
+      url: process.env.REACT_APP_API_URL + "/appointment/" + this.props.user.appointmentId,
       method: "GET",
       headers: {
         "Content-Type": "application/json",

@@ -11,7 +11,7 @@ class RegisterUser extends Component {
 
   setUser = () => {
     const options = {
-      url: process.env.API_URL + "/user",
+      url: process.env.REACT_APP_API_URL + "/user",
       method: "POST",
       headers: {
         "Content-Type": "application/json",

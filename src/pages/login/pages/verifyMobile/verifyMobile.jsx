@@ -15,7 +15,7 @@ class VerifyMobile extends Component {
 
   requestOTP = () => {
     const options = {
-      url: process.env.API_URL + "/user/generate",
+      url: process.env.REACT_APP_API_URL + "/user/generate",
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -39,7 +39,7 @@ class VerifyMobile extends Component {
 
   verifyOTP = () => {
     const options = {
-      url: process.env.API_URL + "/user/validate",
+      url: process.env.REACT_APP_API_URL + "/user/validate",
       method: "POST",
       headers: {
         "Content-Type": "application/json",
