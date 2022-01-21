@@ -3,20 +3,6 @@ import VerifyMobile from "./pages/verifyMobile/verifyMobile";
 import RegisterUser from "./pages/registerUser/registerUser";
 
 class Login extends Component {
-  // state = { user: null };
-
-  // handleVerify = (user) => {
-  //   // this.setState({
-  //   //   user: user,
-  //   // });
-  // };
-
-  // handleRegister = (user) => {
-  //   // this.setState({
-  //   //   user: user,
-  //   // });
-  // };
-
   render() {
     if (!this.props.user) {
       return <VerifyMobile handleVerify={this.props.handleLogIn} />;

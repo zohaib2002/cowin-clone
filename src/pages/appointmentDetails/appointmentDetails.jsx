@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./appointmentDetails.css";
 import ScheduleAppointment from "../scheduleAppointment/scheduleAppointment";
+import Toast from "../../components/toast";
 import Login from "../login/login";
 
 import axios from "axios";
@@ -14,7 +15,7 @@ class AppointmentDetails extends Component {
 
   getCenter = (appointment) => {
     const options = {
-      url: "http://localhost:8080/center/" + appointment.centerId,
+      url: process.env.API_URL + "/center/" + appointment.centerId,
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -32,7 +33,7 @@ class AppointmentDetails extends Component {
 
   getAppointment = () => {
     const options = {
-      url: "http://localhost:8080/appointment/" + this.props.user.appointmentId,
+      url: process.env.API_URL + "/appointment/" + this.props.user.appointmentId,
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -91,10 +92,18 @@ class AppointmentDetails extends Component {
     }
 
     const { appointment, center } = this.state;
+    var bookDate = new Date(appointment.appointmentDate);
+    var today = new Date();
+    var toastVisible = bookDate <= today;
 
     return (
       <div className="form-wrapper">
         <h1 className="register-title my-3">Appointment Details</h1>
+        <Toast
+          msg="Appointment Expired. You can book again in 30 days"
+          visible={toastVisible}
+          handleDiscard={() => {}}
+        />
         <br />
         <table className="table center-table">
           <tbody>
@@ -115,6 +124,10 @@ class AppointmentDetails extends Component {
               <td>{appointment.appointmentNo}</td>
             </tr>
             <tr>
+              <th>Appointment Date</th>
+              <td>{bookDate.toDateString()}</td>
+            </tr>
+            <tr>
               <th>Center Name</th>
               <td>{center.centerName}</td>
             </tr>
@@ -124,6 +137,12 @@ class AppointmentDetails extends Component {
             </tr>
           </tbody>
         </table>
+        <br />
+        <div>
+          <p className="agree-text">
+            To cancel appointment or for other queries call <a href="tel:+911123978046">91-11-2397 8046</a>
+          </p>
+        </div>
       </div>
     );
   }

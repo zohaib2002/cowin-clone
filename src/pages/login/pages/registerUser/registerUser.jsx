@@ -11,7 +11,7 @@ class RegisterUser extends Component {
 
   setUser = () => {
     const options = {
-      url: "http://localhost:8080/user",
+      url: process.env.API_URL + "/user",
       method: "POST",
       headers: {
         "Content-Type": "application/json",

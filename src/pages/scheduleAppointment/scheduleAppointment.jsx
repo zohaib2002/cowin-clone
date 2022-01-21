@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 
 import "./scheduleAppointment.css";
-import Toast from "./components/toast";
+import Toast from "../../components/toast";
 
 class ScheduleAppointment extends Component {
   state = {
@@ -40,7 +40,7 @@ class ScheduleAppointment extends Component {
 
   getStates = () => {
     const options = {
-      url: "http://localhost:8080/states",
+      url: process.env.API_URL + "/states",
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -59,7 +59,7 @@ class ScheduleAppointment extends Component {
 
   getCities = (state) => {
     const options = {
-      url: "http://localhost:8080/states/" + state.replace(/ /g, "+"),
+      url: process.env.API_URL + "/states/" + state.replace(/ /g, "+"),
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -78,7 +78,7 @@ class ScheduleAppointment extends Component {
 
   getCenters = (city) => {
     const options = {
-      url: "http://localhost:8080/center?city=" + city.replace(/ /g, "+"),
+      url: process.env.API_URL + "/center?city=" + city.replace(/ /g, "+"),
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -117,7 +117,7 @@ class ScheduleAppointment extends Component {
     var dateRequestString = bookDate.getMonth() + 1 + "/" + bookDate.getDate() + "/" + bookDate.getFullYear();
 
     const options = {
-      url: "http://localhost:8080/appointment",
+      url: process.env.API_URL + "/appointment",
       method: "POST",
       headers: {
         "Content-Type": "application/json",
