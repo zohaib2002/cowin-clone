@@ -2,20 +2,13 @@ import { Link } from "react-router-dom";
 import logo from "../images/new-logo.svg";
 import "./styles/navbar.css";
 
-function Navbar() {
+function Navbar({ isLoggedIn }) {
   return (
     <div className="sticky-top">
-      <nav
-        className="navbar d-none d-sm-block"
-        style={{ backgroundColor: "#262626", padding: 0 }}
-      >
+      <nav className="navbar d-none d-sm-block" style={{ backgroundColor: "#262626", padding: 0 }}>
         <div className="container-fluid" style={{ padding: 0 }}>
           <div>
-            <button
-              className="top-button"
-              href="#"
-              style={{ backgroundColor: "black" }}
-            >
+            <button className="top-button" href="#" style={{ backgroundColor: "black" }}>
               Home
             </button>
             <button className="top-button" href="#">
@@ -27,17 +20,10 @@ function Navbar() {
           </div>
         </div>
       </nav>
-      <nav
-        className="navbar navbar-expand-lg navbar-dark"
-        style={{ backgroundColor: "#0b0f22" }}
-      >
+      <nav className="navbar navbar-expand-lg navbar-dark" style={{ backgroundColor: "#0b0f22" }}>
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            <img
-              className="my-2"
-              src={logo}
-              alt="Cowin: Winning over Covid-19"
-            />
+            <img className="my-2" src={logo} alt="Cowin: Winning over Covid-19" />
           </a>
           <button
             className="navbar-toggler"
@@ -50,10 +36,7 @@ function Navbar() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div
-            className="collapse navbar-collapse justify-content-end"
-            id="navbarNavDropdown"
-          >
+          <div className="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
             <ul className="navbar-nav nav-text">
               <li className="nav-item dropdown">
                 <a
@@ -66,28 +49,29 @@ function Navbar() {
                 >
                   VACCINATION SERVICES
                 </a>
-                <ul
-                  className="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li>
+                    <Link to="appointmentDetails" className="dropdown-item">
+                      Book an Appointment
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="appointmentDetails" className="dropdown-item">
+                      Get Appointment Details
+                    </Link>
+                  </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      Action
+                      Share Vaccination Status
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      Another action
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Something else here
+                      Download Certificate
                     </a>
                   </li>
                 </ul>
               </li>
-
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">
                   PLATFORMS
@@ -103,13 +87,15 @@ function Navbar() {
                   SUPPORT
                 </a>
               </li>
-              <li className="nav-item">
-                <Link to="login">
-                  <button className="register-button">
-                    Register / Sign In
-                  </button>
-                </Link>
-              </li>
+              {isLoggedIn ? (
+                <></>
+              ) : (
+                <li className="nav-item">
+                  <Link to="appointmentDetails">
+                    <button className="register-button">Register / Sign In</button>
+                  </Link>
+                </li>
+              )}
             </ul>
           </div>
         </div>

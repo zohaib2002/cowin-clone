@@ -92,7 +92,7 @@ class ScheduleAppointment extends Component {
           this.setState({ selectedCity: city, centerList: results, selectedCenterId: results[0]._id });
         } else {
           this.showMessage("No Centers available in " + city);
-          this.setState({ selectedCity: city });
+          this.setState({ selectedCity: city, centerList: [], selectedCenterId: "" });
         }
       } else {
         alert("Error getting centers " + response.status);

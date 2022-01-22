@@ -43,7 +43,7 @@ class AppointmentDetails extends Component {
     axios(options).then((response) => {
       if (response.status === 200) {
         this.getCenter(response.data);
-      } else if (response.status === 400) {
+      } else if (response.status === 205) {
         this.setState({ isAppointmentLoaded: true });
       } else {
         alert("Error getting appointment " + response.status);

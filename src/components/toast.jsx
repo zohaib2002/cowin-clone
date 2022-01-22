@@ -2,7 +2,6 @@ function Toast(props) {
   // importing './toast.css' is not working
   var toastStyle = {
     display: props.visible ? "flex" : "none",
-    // height: "40px",
     borderRadius: "5px",
     backgroundColor: "#ADD8E6",
     border: "1px solid blue",
