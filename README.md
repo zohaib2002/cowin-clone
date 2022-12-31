@@ -1,5 +1,11 @@
 # CoWIN India
 
+This is a clone of India's Covid-19 vaccination drive website CoWIN. It was submitted as the Capstone project for Full Stack Developer Internship at GeoGo Technologies Pvt. Ltd.
+
+<figure class="video_container">
+  <iframe src="https://www.youtube.com/embed/7ogQQDBYgzM" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
+
 This project uses the API hosted here: [**zohaib2002**/cowin-clone-api](https://github.com/zohaib2002/cowin-clone-api)  
 Scroll to bottom for deployment link.
 
